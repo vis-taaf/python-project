@@ -1,7 +1,7 @@
 import random
 
 class story:
-    tipe = ["legend", "fairytale", "histori"]
+    tipe = ["legend", "fairytale", "history"]
     tokoh = ["kancil", "harimau", "buaya"]
     tempat = ["surabaya", "bandung", "semarang", "jakarta"]
     kota = random.choice(tempat)
@@ -26,13 +26,13 @@ class gnrtStory2(story):
 
     def __init__(self, storyType, place):
         super().__init__(storyType, place)
-        if storyType == "history" and place == story.tempat[0]:
+        if storyType == story.tipe[2] and place == story.tempat[0]:
             print("Pada suatu hari, pada tanggal 10 November 1945 merupakan hari paling bersejarah \nbagi masyarakat Indonesia khususnya kota Surabaya ...")
-        elif storyType == "history" and place == story.tempat[1]:
+        elif storyType == story.tipe[2] and place == story.tempat[1]:
             print("Pada suatu hari, pada tanggal 23 Maret 1946 merupakan peristiwa yang kita kenal \ndengan Bandung lautan api ...")
-        elif storyType == "history" and place == story.tempat[2]:
+        elif storyType == story.tipe[2]  and place == story.tempat[2]:
             print("Pada suatu hari, pada tanggal 15 - 19 Oktober 1945 terjadi peristiwa bersejarah \nyang dikenal dengan peristiwa pertempuran 5 hari di Semarang ...")
-        elif storyType == "history" and place == story.tempat[3]:
+        elif storyType == story.tipe[2]  and place == story.tempat[3]:
             print("Pada suatu hari, pada tanggal 17 Agustus 1945 merupakan peristiwa paling bersejarah bagi bangsa Indonesia. \nPada tanggal tersebut merupakan hari kemerdekaan bangsa Indonesia ...")
 
 print("Welcome to the story generator game \nit's time to generate a story based on your preference")
